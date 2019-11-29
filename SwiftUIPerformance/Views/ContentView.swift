@@ -9,8 +9,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    private let updateTimer = Timer.timer(frequency: 60)
+    @State private var updateTrigger = false
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            FPSView(update: $updateTrigger).equatable()
+            Text("Hello, World!")
+        }
+        .onReceive(self.updateTimer) { elapsed in
+            self.updateTrigger.toggle()
+        }
     }
 }
 
