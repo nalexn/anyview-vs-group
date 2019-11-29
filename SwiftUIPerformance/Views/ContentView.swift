@@ -17,14 +17,18 @@ struct ContentView: View {
     var body: some View {
         VStack {
             FPSView(update: $updateTrigger).equatable()
-            toggledContentInAnyView
+            testStaticContent
         }
         .onReceive(self.updateTimer) { elapsed in
             self.updateTrigger.toggle()
         }
     }
     
-    var toggledContentInConditionalView: some View {
+    var testStaticContent: some View {
+        StaticGridView<TextElementView>(size: gridSize)
+    }
+    
+    var testToggledContentWithConditionalView: some View {
         Group {
             if updateTrigger {
                 StaticGridView<TextElementView>(size: gridSize)
@@ -34,11 +38,19 @@ struct ContentView: View {
         }
     }
     
-    var toggledContentInAnyView: some View {
+    var testToggledContentWithAnyView: some View {
         if updateTrigger {
             return AnyView(StaticGridView<TextElementView>(size: gridSize))
         } else {
             return AnyView(StaticGridView<ImageElementView>(size: gridSize))
         }
+    }
+    
+    var testComparisonWithTypedView: some View {
+        DynamicTypedGridView<TextElementView>(size: gridSize, update: $updateTrigger)
+    }
+    
+    var testComparisonWithTypeErasedView: some View {
+        DynamicTypeErasedGridView<TextElementView>(size: gridSize, update: $updateTrigger)
     }
 }
