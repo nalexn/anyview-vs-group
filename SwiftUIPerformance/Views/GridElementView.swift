@@ -16,12 +16,20 @@ struct TextElementView: GridElementView {
     
     let indexPath: IndexPath
     
-    init(indexPath: IndexPath) {
-        self.indexPath = indexPath
-    }
-    
     var body: some View {
         return Text("$")
             .font(Font.custom("Courier", size: 10))
+    }
+}
+
+struct ImageElementView: GridElementView {
+    
+    private static var image = UIColor.white.image(CGSize(width: 6, height: 10))
+
+    let indexPath: IndexPath
+
+    var body: some View {
+        Image(uiImage: ImageElementView.image)
+            .padding(.zero)
     }
 }

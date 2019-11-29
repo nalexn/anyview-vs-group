@@ -17,20 +17,28 @@ struct ContentView: View {
     var body: some View {
         VStack {
             FPSView(update: $updateTrigger).equatable()
-            testView
+            toggledContentInAnyView
         }
         .onReceive(self.updateTimer) { elapsed in
             self.updateTrigger.toggle()
         }
     }
     
-    var testView: some View {
-        StaticGridView<TextElementView>(size: gridSize)
+    var toggledContentInConditionalView: some View {
+        Group {
+            if updateTrigger {
+                StaticGridView<TextElementView>(size: gridSize)
+            } else {
+                StaticGridView<ImageElementView>(size: gridSize)
+            }
+        }
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    var toggledContentInAnyView: some View {
+        if updateTrigger {
+            return AnyView(StaticGridView<TextElementView>(size: gridSize))
+        } else {
+            return AnyView(StaticGridView<ImageElementView>(size: gridSize))
+        }
     }
 }

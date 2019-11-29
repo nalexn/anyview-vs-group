@@ -8,6 +8,7 @@
 
 import Foundation
 import Combine
+import UIKit
 
 struct DiscretePair {
     let dx: Int
@@ -48,4 +49,15 @@ extension Timer {
 
 extension Date {
     var snapshot: TimeInterval { timeIntervalSinceReferenceDate }
+}
+
+extension UIColor {
+    func image(_ size: CGSize) -> UIImage {
+        let format = UIGraphicsImageRendererFormat()
+        format.scale = 1
+        return UIGraphicsImageRenderer(size: size, format: format).image { rendererContext in
+            setFill()
+            rendererContext.fill(CGRect(origin: .zero, size: size))
+        }
+    }
 }
