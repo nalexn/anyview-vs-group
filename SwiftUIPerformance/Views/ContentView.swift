@@ -17,11 +17,29 @@ struct ContentView: View {
     var body: some View {
         VStack {
             FPSView(update: $updateTrigger).equatable()
-            testStaticContent
+            testView
         }
         .onReceive(self.updateTimer) { elapsed in
             self.updateTrigger.toggle()
         }
+    }
+    
+    var testView: some View {
+        #if STATIC_CONTENT
+        return testStaticContent
+        #endif
+        #if TOGGLE_CONDITIONAL
+        return testToggledContentWithConditionalView
+        #endif
+        #if TOGGLE_ANYVIEW
+        return testToggledContentWithAnyView
+        #endif
+        #if COMPARE_TYPED
+        return testComparisonWithTypedView
+        #endif
+        #if COMPARE_TYPE_ERASED
+        return testComparisonWithTypeErasedView
+        #endif
     }
     
     var testStaticContent: some View {
