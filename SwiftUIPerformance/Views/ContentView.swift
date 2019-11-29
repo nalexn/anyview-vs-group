@@ -10,17 +10,22 @@ import SwiftUI
 
 struct ContentView: View {
     
+    private let gridSize = DiscretePair(dx: 30, dy: 30)
     private let updateTimer = Timer.timer(frequency: 60)
     @State private var updateTrigger = false
     
     var body: some View {
         VStack {
             FPSView(update: $updateTrigger).equatable()
-            StaticGridView<TextElementView>(size: DiscretePair(dx: 30, dy: 30))
+            testView
         }
         .onReceive(self.updateTimer) { elapsed in
             self.updateTrigger.toggle()
         }
+    }
+    
+    var testView: some View {
+        StaticGridView<TextElementView>(size: gridSize)
     }
 }
 
