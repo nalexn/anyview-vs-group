@@ -15,6 +15,8 @@
 		F622A76B2391638A0093591E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F622A7692391638A0093591E /* LaunchScreen.storyboard */; };
 		F622A775239178B30093591E /* FPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A774239178B30093591E /* FPSView.swift */; };
 		F622A777239178F00093591E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A776239178F00093591E /* Helpers.swift */; };
+		F622A77923917D290093591E /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A77823917D290093591E /* GridView.swift */; };
+		F622A77B23917E450093591E /* GridElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A77A23917E450093591E /* GridElementView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		F622A76C2391638A0093591E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F622A774239178B30093591E /* FPSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPSView.swift; sourceTree = "<group>"; };
 		F622A776239178F00093591E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		F622A77823917D290093591E /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		F622A77A23917E450093591E /* GridElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridElementView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 			children = (
 				F622A762239163860093591E /* ContentView.swift */,
 				F622A774239178B30093591E /* FPSView.swift */,
+				F622A77823917D290093591E /* GridView.swift */,
+				F622A77A23917E450093591E /* GridElementView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +170,8 @@
 				F622A75F239163860093591E /* AppDelegate.swift in Sources */,
 				F622A761239163860093591E /* SceneDelegate.swift in Sources */,
 				F622A777239178F00093591E /* Helpers.swift in Sources */,
+				F622A77B23917E450093591E /* GridElementView.swift in Sources */,
+				F622A77923917D290093591E /* GridView.swift in Sources */,
 				F622A763239163860093591E /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,28 @@
 import Foundation
 import Combine
 
+struct DiscretePair {
+    let dx: Int
+    let dy: Int
+}
+
+extension Int {
+    var indices: [Int] {
+        guard self > 0 else { return [] }
+        return Array(stride(from: 0, to: self, by: 1))
+    }
+}
+
+extension Int: Identifiable {
+    public var id: Int { self }
+}
+
+extension IndexPath {
+    init(row: Int, column: Int) {
+        self.init(row: row, section: column)
+    }
+}
+
 extension Timer {
     static func timer(frequency: Int) -> AnyPublisher<TimeInterval, Never> {
         var lastUpdate = Date().timeIntervalSinceReferenceDate

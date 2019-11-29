@@ -16,7 +16,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             FPSView(update: $updateTrigger).equatable()
-            Text("Hello, World!")
+            StaticGridView<TextElementView>(size: DiscretePair(dx: 30, dy: 30))
         }
         .onReceive(self.updateTimer) { elapsed in
             self.updateTrigger.toggle()
