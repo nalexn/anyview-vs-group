@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    private let gridSize = DiscretePair(dx: 30, dy: 30)
+    private let gridSize = DiscretePair(dx: 40, dy: 40)
     private let updateTimer = Timer.timer(frequency: 60)
     @State private var updateTrigger = false
     
@@ -65,7 +65,8 @@ struct ContentView: View {
     }
     
     var testComparisonWithTypedView: some View {
-        DynamicTypedGridView<TextElementView>(size: gridSize, update: $updateTrigger)
+        ZStackGridView<ToggledElementView>(size: gridSize, update: $updateTrigger)
+//        DynamicTypedGridView<TextElementView>(size: gridSize, update: $updateTrigger)
     }
     
     var testComparisonWithTypeErasedView: some View {
