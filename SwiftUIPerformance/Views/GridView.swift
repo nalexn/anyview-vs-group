@@ -26,15 +26,15 @@ struct GridView<Cell>: View where Cell: GridElementView {
     }
     
     private func cell(indexPath: IndexPath, size: CGSize) -> some View {
-        let alignment = AlignmentModifier(
-            dimensions: self.size, indexPath: indexPath, size: size)
+        let alignment = GridAlignment(dimensions: self.size, indexPath: indexPath, size: size)
+//      let alignment = NoAlignment()
         #if EQUATABLE_VIEW_UPDATE
         return Cell(indexPath: indexPath, update: self.update)
             .equatable()
             .modifier(alignment)
         #elseif TYPE_ERASED_VIEW_UPDATE
-        return AnyView(Cell(indexPath: indexPath, update: self.update))
-            .modifier(alignment)
+        return AnyView(Cell(indexPath: indexPath, update: self.update)
+            .modifier(alignment))
         #else
         return Cell(indexPath: indexPath, update: self.update)
             .modifier(alignment)
@@ -42,7 +42,15 @@ struct GridView<Cell>: View where Cell: GridElementView {
     }
 }
 
-private struct AlignmentModifier: ViewModifier {
+// MARK: - Alignment Modifiers
+
+private struct NoAlignment: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+    }
+}
+
+private struct GridAlignment: ViewModifier {
     
     let dimensions: DiscretePair
     let indexPath: IndexPath

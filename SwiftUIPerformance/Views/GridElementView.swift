@@ -12,16 +12,14 @@ protocol GridElementView: View, Equatable {
     init(indexPath: IndexPath, update: Binding<Bool>)
 }
 
+// MARK: - Static Views
+
 struct TextElementView: GridElementView {
     
-    let indexPath: IndexPath
-    
-    init(indexPath: IndexPath, update: Binding<Bool>) {
-        self.indexPath = indexPath
-    }
+    init(indexPath: IndexPath, update: Binding<Bool>) { }
     
     var body: some View {
-        return Text("$")
+        Text("$")
             .font(Font.custom("Courier", size: 10))
     }
 }
@@ -30,17 +28,15 @@ struct ImageElementView: GridElementView {
     
     private static var image = UIColor.white.image(CGSize(width: 6, height: 10))
 
-    let indexPath: IndexPath
-    
-    init(indexPath: IndexPath, update: Binding<Bool>) {
-        self.indexPath = indexPath
-    }
+    init(indexPath: IndexPath, update: Binding<Bool>) { }
 
     var body: some View {
         Image(uiImage: ImageElementView.image)
             .padding(.zero)
     }
 }
+
+// MARK: - Dynamic Views
 
 struct ToggledElementView: GridElementView {
     
@@ -54,7 +50,7 @@ struct ToggledElementView: GridElementView {
     
     var body: some View {
         Group {
-            if update.wrappedValue && indexPath == IndexPath(row: 5, column: 5) {
+            if indexPath == Constants.toggledElementIndexPath && update.wrappedValue {
                 ImageElementView(indexPath: indexPath, update: update)
             } else {
                 TextElementView(indexPath: indexPath, update: update)
@@ -74,13 +70,15 @@ struct TypeErasedToggledElementView: GridElementView {
     }
     
     var body: some View {
-        if update.wrappedValue && indexPath == IndexPath(row: 5, column: 5) {
+        if indexPath == Constants.toggledElementIndexPath && update.wrappedValue {
             return AnyView(ImageElementView(indexPath: indexPath, update: update))
         } else {
             return AnyView(TextElementView(indexPath: indexPath, update: update))
         }
     }
 }
+
+// MARK: - Equatable
 
 func == (lhs: TextElementView, rhs: TextElementView) -> Bool {
     return true
@@ -95,5 +93,5 @@ func == (lhs: ToggledElementView, rhs: ToggledElementView) -> Bool {
 }
 
 func == (lhs: TypeErasedToggledElementView, rhs: TypeErasedToggledElementView) -> Bool {
-    return false
+    fatalError("Must not be called")
 }

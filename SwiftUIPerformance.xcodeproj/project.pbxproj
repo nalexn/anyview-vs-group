@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F60F0E03239801AE008566CC /* FPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A774239178B30093591E /* FPSView.swift */; };
+		F60F0E04239801AE008566CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A75E239163860093591E /* AppDelegate.swift */; };
+		F60F0E05239801AE008566CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A760239163860093591E /* SceneDelegate.swift */; };
+		F60F0E06239801AE008566CC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A776239178F00093591E /* Helpers.swift */; };
+		F60F0E07239801AE008566CC /* GridElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A77A23917E450093591E /* GridElementView.swift */; };
+		F60F0E08239801AE008566CC /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A77823917D290093591E /* GridView.swift */; };
+		F60F0E09239801AE008566CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A762239163860093591E /* ContentView.swift */; };
+		F60F0E0C239801AE008566CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F622A7692391638A0093591E /* LaunchScreen.storyboard */; };
+		F60F0E0D239801AE008566CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F622A7672391638A0093591E /* Preview Assets.xcassets */; };
+		F60F0E0E239801AE008566CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F622A7642391638A0093591E /* Assets.xcassets */; };
+		F60F0E16239801C1008566CC /* FPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A774239178B30093591E /* FPSView.swift */; };
+		F60F0E17239801C1008566CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A75E239163860093591E /* AppDelegate.swift */; };
+		F60F0E18239801C1008566CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A760239163860093591E /* SceneDelegate.swift */; };
+		F60F0E19239801C1008566CC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A776239178F00093591E /* Helpers.swift */; };
+		F60F0E1A239801C1008566CC /* GridElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A77A23917E450093591E /* GridElementView.swift */; };
+		F60F0E1B239801C1008566CC /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A77823917D290093591E /* GridView.swift */; };
+		F60F0E1C239801C1008566CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A762239163860093591E /* ContentView.swift */; };
+		F60F0E1F239801C1008566CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F622A7692391638A0093591E /* LaunchScreen.storyboard */; };
+		F60F0E20239801C1008566CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F622A7672391638A0093591E /* Preview Assets.xcassets */; };
+		F60F0E21239801C1008566CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F622A7642391638A0093591E /* Assets.xcassets */; };
 		F622A75F239163860093591E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A75E239163860093591E /* AppDelegate.swift */; };
 		F622A761239163860093591E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A760239163860093591E /* SceneDelegate.swift */; };
 		F622A763239163860093591E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A762239163860093591E /* ContentView.swift */; };
@@ -50,6 +70,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F60F0E12239801AE008566CC /* Toggle Content Conditional.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toggle Content Conditional.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F60F0E25239801C1008566CC /* Toggle Content AnyView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toggle Content AnyView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F622A75B239163860093591E /* Static Content.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Static Content.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F622A75E239163860093591E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F622A760239163860093591E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +90,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F60F0E0A239801AE008566CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60F0E1D239801C1008566CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F622A758239163860093591E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,6 +150,8 @@
 				F65A08892391ADD900F2113B /* Regular View Update.app */,
 				F65A089C2391AED600F2113B /* Type-erased View Update.app */,
 				F65A08AF2391AEF600F2113B /* Equatable View Update.app */,
+				F60F0E12239801AE008566CC /* Toggle Content Conditional.app */,
+				F60F0E25239801C1008566CC /* Toggle Content AnyView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +193,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F60F0E01239801AE008566CC /* Toggle Content Conditional */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F60F0E0F239801AE008566CC /* Build configuration list for PBXNativeTarget "Toggle Content Conditional" */;
+			buildPhases = (
+				F60F0E02239801AE008566CC /* Sources */,
+				F60F0E0A239801AE008566CC /* Frameworks */,
+				F60F0E0B239801AE008566CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Toggle Content Conditional";
+			productName = SwiftUIPerformance;
+			productReference = F60F0E12239801AE008566CC /* Toggle Content Conditional.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F60F0E14239801C1008566CC /* Toggle Content AnyView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F60F0E22239801C1008566CC /* Build configuration list for PBXNativeTarget "Toggle Content AnyView" */;
+			buildPhases = (
+				F60F0E15239801C1008566CC /* Sources */,
+				F60F0E1D239801C1008566CC /* Frameworks */,
+				F60F0E1E239801C1008566CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Toggle Content AnyView";
+			productName = SwiftUIPerformance;
+			productReference = F60F0E25239801C1008566CC /* Toggle Content AnyView.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F622A75A239163860093591E /* Static Content */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F622A76F2391638A0093591E /* Build configuration list for PBXNativeTarget "Static Content" */;
@@ -252,6 +324,8 @@
 			projectRoot = "";
 			targets = (
 				F622A75A239163860093591E /* Static Content */,
+				F60F0E01239801AE008566CC /* Toggle Content Conditional */,
+				F60F0E14239801C1008566CC /* Toggle Content AnyView */,
 				F65A08782391ADD900F2113B /* Regular View Update */,
 				F65A088B2391AED600F2113B /* Type-erased View Update */,
 				F65A089E2391AEF600F2113B /* Equatable View Update */,
@@ -260,6 +334,26 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F60F0E0B239801AE008566CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60F0E0C239801AE008566CC /* LaunchScreen.storyboard in Resources */,
+				F60F0E0D239801AE008566CC /* Preview Assets.xcassets in Resources */,
+				F60F0E0E239801AE008566CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60F0E1E239801C1008566CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60F0E1F239801C1008566CC /* LaunchScreen.storyboard in Resources */,
+				F60F0E20239801C1008566CC /* Preview Assets.xcassets in Resources */,
+				F60F0E21239801C1008566CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F622A759239163860093591E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,6 +397,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F60F0E02239801AE008566CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60F0E03239801AE008566CC /* FPSView.swift in Sources */,
+				F60F0E04239801AE008566CC /* AppDelegate.swift in Sources */,
+				F60F0E05239801AE008566CC /* SceneDelegate.swift in Sources */,
+				F60F0E06239801AE008566CC /* Helpers.swift in Sources */,
+				F60F0E07239801AE008566CC /* GridElementView.swift in Sources */,
+				F60F0E08239801AE008566CC /* GridView.swift in Sources */,
+				F60F0E09239801AE008566CC /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F60F0E15239801C1008566CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F60F0E16239801C1008566CC /* FPSView.swift in Sources */,
+				F60F0E17239801C1008566CC /* AppDelegate.swift in Sources */,
+				F60F0E18239801C1008566CC /* SceneDelegate.swift in Sources */,
+				F60F0E19239801C1008566CC /* Helpers.swift in Sources */,
+				F60F0E1A239801C1008566CC /* GridElementView.swift in Sources */,
+				F60F0E1B239801C1008566CC /* GridView.swift in Sources */,
+				F60F0E1C239801C1008566CC /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F622A757239163860093591E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,6 +495,90 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F60F0E10239801AE008566CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIPerformance/Assets\"";
+				DEVELOPMENT_TEAM = J6H9A24BCA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftUIPerformance/Assets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-D TOGGLE_CONTENT_CONDITIONAL";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftui.performance.SwiftUIPerformance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F60F0E11239801AE008566CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIPerformance/Assets\"";
+				DEVELOPMENT_TEAM = J6H9A24BCA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftUIPerformance/Assets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-D TOGGLE_CONTENT_CONDITIONAL";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftui.performance.SwiftUIPerformance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F60F0E23239801C1008566CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIPerformance/Assets\"";
+				DEVELOPMENT_TEAM = J6H9A24BCA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftUIPerformance/Assets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-D TOGGLE_CONTENT_ANYVIEW";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftui.performance.SwiftUIPerformance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F60F0E24239801C1008566CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIPerformance/Assets\"";
+				DEVELOPMENT_TEAM = J6H9A24BCA;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftUIPerformance/Assets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-D TOGGLE_CONTENT_ANYVIEW";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftui.performance.SwiftUIPerformance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F622A76D2391638A0093591E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -658,6 +864,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F60F0E0F239801AE008566CC /* Build configuration list for PBXNativeTarget "Toggle Content Conditional" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60F0E10239801AE008566CC /* Debug */,
+				F60F0E11239801AE008566CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F60F0E22239801C1008566CC /* Build configuration list for PBXNativeTarget "Toggle Content AnyView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F60F0E23239801C1008566CC /* Debug */,
+				F60F0E24239801C1008566CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F622A756239163860093591E /* Build configuration list for PBXProject "SwiftUIPerformance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
