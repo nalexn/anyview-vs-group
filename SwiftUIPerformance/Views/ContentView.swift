@@ -27,49 +27,29 @@ struct ContentView: View {
     var testView: some View {
         #if STATIC_CONTENT
         return testStaticContent
-        #endif
-        #if TOGGLE_CONDITIONAL
-        return testToggledContentWithConditionalView
-        #endif
-        #if TOGGLE_ANYVIEW
-        return testToggledContentWithAnyView
-        #endif
-        #if COMPARE_TYPED
-        return testComparisonWithTypedView
-        #endif
-        #if COMPARE_TYPE_ERASED
-        return testComparisonWithTypeErasedView
+        #elseif REGULAR_VIEW_UPDATE
+        return testRegularViewUpdate
+        #elseif TYPE_ERASED_VIEW_UPDATE
+        return testTypeErasedViewUpdate
+        #elseif EQUATABLE_VIEW_UPDATE
+        return testEquatableViewUpdate
         #endif
     }
     
     var testStaticContent: some View {
-        StaticGridView<TextElementView>(size: gridSize)
+        let update = Binding<Bool>(get: { true }, set: { _ in })
+        return GridView<TextElementView>(size: gridSize, update: update)
     }
     
-    var testToggledContentWithConditionalView: some View {
-        Group {
-            if updateTrigger {
-                StaticGridView<TextElementView>(size: gridSize)
-            } else {
-                StaticGridView<ImageElementView>(size: gridSize)
-            }
-        }
+    var testRegularViewUpdate: some View {
+        GridView<ToggledElementView>(size: gridSize, update: $updateTrigger)
     }
     
-    var testToggledContentWithAnyView: some View {
-        if updateTrigger {
-            return AnyView(StaticGridView<TextElementView>(size: gridSize))
-        } else {
-            return AnyView(StaticGridView<ImageElementView>(size: gridSize))
-        }
+    var testTypeErasedViewUpdate: some View {
+        GridView<TypeErasedToggledElementView>(size: gridSize, update: $updateTrigger)
     }
     
-    var testComparisonWithTypedView: some View {
-        ZStackGridView<ToggledElementView>(size: gridSize, update: $updateTrigger)
-//        DynamicTypedGridView<TextElementView>(size: gridSize, update: $updateTrigger)
-    }
-    
-    var testComparisonWithTypeErasedView: some View {
-        DynamicTypeErasedGridView<TextElementView>(size: gridSize, update: $updateTrigger)
+    var testEquatableViewUpdate: some View {
+        GridView<ToggledElementView>(size: gridSize, update: $updateTrigger)
     }
 }

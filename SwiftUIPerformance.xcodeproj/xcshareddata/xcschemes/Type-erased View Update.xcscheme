@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F65A08782391ADD900F2113B"
-               BuildableName = "Toggle with ConditionalView.app"
-               BlueprintName = "Toggle with ConditionalView"
+               BlueprintIdentifier = "F65A088B2391AED600F2113B"
+               BuildableName = "Type-erased View Update.app"
+               BlueprintName = "Type-erased View Update"
                ReferencedContainer = "container:SwiftUIPerformance.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F65A08782391ADD900F2113B"
-            BuildableName = "Toggle with ConditionalView.app"
-            BlueprintName = "Toggle with ConditionalView"
+            BlueprintIdentifier = "F65A088B2391AED600F2113B"
+            BuildableName = "Type-erased View Update.app"
+            BlueprintName = "Type-erased View Update"
             ReferencedContainer = "container:SwiftUIPerformance.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,9 +61,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F65A08782391ADD900F2113B"
-            BuildableName = "Toggle with ConditionalView.app"
-            BlueprintName = "Toggle with ConditionalView"
+            BlueprintIdentifier = "F65A088B2391AED600F2113B"
+            BuildableName = "Type-erased View Update.app"
+            BlueprintName = "Type-erased View Update"
             ReferencedContainer = "container:SwiftUIPerformance.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

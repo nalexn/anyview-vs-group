@@ -47,16 +47,6 @@
 		F65A08A92391AEF600F2113B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F622A7692391638A0093591E /* LaunchScreen.storyboard */; };
 		F65A08AA2391AEF600F2113B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F622A7672391638A0093591E /* Preview Assets.xcassets */; };
 		F65A08AB2391AEF600F2113B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F622A7642391638A0093591E /* Assets.xcassets */; };
-		F65A08B32391AF1B00F2113B /* FPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A774239178B30093591E /* FPSView.swift */; };
-		F65A08B42391AF1B00F2113B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A75E239163860093591E /* AppDelegate.swift */; };
-		F65A08B52391AF1B00F2113B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A760239163860093591E /* SceneDelegate.swift */; };
-		F65A08B62391AF1B00F2113B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A776239178F00093591E /* Helpers.swift */; };
-		F65A08B72391AF1B00F2113B /* GridElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A77A23917E450093591E /* GridElementView.swift */; };
-		F65A08B82391AF1B00F2113B /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A77823917D290093591E /* GridView.swift */; };
-		F65A08B92391AF1B00F2113B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622A762239163860093591E /* ContentView.swift */; };
-		F65A08BC2391AF1B00F2113B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F622A7692391638A0093591E /* LaunchScreen.storyboard */; };
-		F65A08BD2391AF1B00F2113B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F622A7672391638A0093591E /* Preview Assets.xcassets */; };
-		F65A08BE2391AF1B00F2113B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F622A7642391638A0093591E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,10 +62,9 @@
 		F622A776239178F00093591E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		F622A77823917D290093591E /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		F622A77A23917E450093591E /* GridElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridElementView.swift; sourceTree = "<group>"; };
-		F65A08892391ADD900F2113B /* Toggle with ConditionalView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toggle with ConditionalView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F65A089C2391AED600F2113B /* Toggle with AnyView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toggle with AnyView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F65A08AF2391AEF600F2113B /* Compare Typed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Compare Typed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F65A08C22391AF1B00F2113B /* Compare Type Erased.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Compare Type Erased.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65A08892391ADD900F2113B /* Regular View Update.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Regular View Update.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65A089C2391AED600F2113B /* Type-erased View Update.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Type-erased View Update.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65A08AF2391AEF600F2113B /* Equatable View Update.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Equatable View Update.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +96,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F65A08BA2391AF1B00F2113B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -129,10 +111,9 @@
 			isa = PBXGroup;
 			children = (
 				F622A75B239163860093591E /* Static Content.app */,
-				F65A08892391ADD900F2113B /* Toggle with ConditionalView.app */,
-				F65A089C2391AED600F2113B /* Toggle with AnyView.app */,
-				F65A08AF2391AEF600F2113B /* Compare Typed.app */,
-				F65A08C22391AF1B00F2113B /* Compare Type Erased.app */,
+				F65A08892391ADD900F2113B /* Regular View Update.app */,
+				F65A089C2391AED600F2113B /* Type-erased View Update.app */,
+				F65A08AF2391AEF600F2113B /* Equatable View Update.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,9 +172,9 @@
 			productReference = F622A75B239163860093591E /* Static Content.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F65A08782391ADD900F2113B /* Toggle with ConditionalView */ = {
+		F65A08782391ADD900F2113B /* Regular View Update */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F65A08862391ADD900F2113B /* Build configuration list for PBXNativeTarget "Toggle with ConditionalView" */;
+			buildConfigurationList = F65A08862391ADD900F2113B /* Build configuration list for PBXNativeTarget "Regular View Update" */;
 			buildPhases = (
 				F65A08792391ADD900F2113B /* Sources */,
 				F65A08812391ADD900F2113B /* Frameworks */,
@@ -203,14 +184,14 @@
 			);
 			dependencies = (
 			);
-			name = "Toggle with ConditionalView";
+			name = "Regular View Update";
 			productName = SwiftUIPerformance;
-			productReference = F65A08892391ADD900F2113B /* Toggle with ConditionalView.app */;
+			productReference = F65A08892391ADD900F2113B /* Regular View Update.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F65A088B2391AED600F2113B /* Toggle with AnyView */ = {
+		F65A088B2391AED600F2113B /* Type-erased View Update */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F65A08992391AED600F2113B /* Build configuration list for PBXNativeTarget "Toggle with AnyView" */;
+			buildConfigurationList = F65A08992391AED600F2113B /* Build configuration list for PBXNativeTarget "Type-erased View Update" */;
 			buildPhases = (
 				F65A088C2391AED600F2113B /* Sources */,
 				F65A08942391AED600F2113B /* Frameworks */,
@@ -220,14 +201,14 @@
 			);
 			dependencies = (
 			);
-			name = "Toggle with AnyView";
+			name = "Type-erased View Update";
 			productName = SwiftUIPerformance;
-			productReference = F65A089C2391AED600F2113B /* Toggle with AnyView.app */;
+			productReference = F65A089C2391AED600F2113B /* Type-erased View Update.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F65A089E2391AEF600F2113B /* Compare Typed */ = {
+		F65A089E2391AEF600F2113B /* Equatable View Update */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F65A08AC2391AEF600F2113B /* Build configuration list for PBXNativeTarget "Compare Typed" */;
+			buildConfigurationList = F65A08AC2391AEF600F2113B /* Build configuration list for PBXNativeTarget "Equatable View Update" */;
 			buildPhases = (
 				F65A089F2391AEF600F2113B /* Sources */,
 				F65A08A72391AEF600F2113B /* Frameworks */,
@@ -237,26 +218,9 @@
 			);
 			dependencies = (
 			);
-			name = "Compare Typed";
+			name = "Equatable View Update";
 			productName = SwiftUIPerformance;
-			productReference = F65A08AF2391AEF600F2113B /* Compare Typed.app */;
-			productType = "com.apple.product-type.application";
-		};
-		F65A08B12391AF1B00F2113B /* Compare Type Erased */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F65A08BF2391AF1B00F2113B /* Build configuration list for PBXNativeTarget "Compare Type Erased" */;
-			buildPhases = (
-				F65A08B22391AF1B00F2113B /* Sources */,
-				F65A08BA2391AF1B00F2113B /* Frameworks */,
-				F65A08BB2391AF1B00F2113B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Compare Type Erased";
-			productName = SwiftUIPerformance;
-			productReference = F65A08C22391AF1B00F2113B /* Compare Type Erased.app */;
+			productReference = F65A08AF2391AEF600F2113B /* Equatable View Update.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -288,10 +252,9 @@
 			projectRoot = "";
 			targets = (
 				F622A75A239163860093591E /* Static Content */,
-				F65A08782391ADD900F2113B /* Toggle with ConditionalView */,
-				F65A088B2391AED600F2113B /* Toggle with AnyView */,
-				F65A089E2391AEF600F2113B /* Compare Typed */,
-				F65A08B12391AF1B00F2113B /* Compare Type Erased */,
+				F65A08782391ADD900F2113B /* Regular View Update */,
+				F65A088B2391AED600F2113B /* Type-erased View Update */,
+				F65A089E2391AEF600F2113B /* Equatable View Update */,
 			);
 		};
 /* End PBXProject section */
@@ -334,16 +297,6 @@
 				F65A08A92391AEF600F2113B /* LaunchScreen.storyboard in Resources */,
 				F65A08AA2391AEF600F2113B /* Preview Assets.xcassets in Resources */,
 				F65A08AB2391AEF600F2113B /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F65A08BB2391AF1B00F2113B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F65A08BC2391AF1B00F2113B /* LaunchScreen.storyboard in Resources */,
-				F65A08BD2391AF1B00F2113B /* Preview Assets.xcassets in Resources */,
-				F65A08BE2391AF1B00F2113B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,20 +356,6 @@
 				F65A08A42391AEF600F2113B /* GridElementView.swift in Sources */,
 				F65A08A52391AEF600F2113B /* GridView.swift in Sources */,
 				F65A08A62391AEF600F2113B /* ContentView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F65A08B22391AF1B00F2113B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F65A08B32391AF1B00F2113B /* FPSView.swift in Sources */,
-				F65A08B42391AF1B00F2113B /* AppDelegate.swift in Sources */,
-				F65A08B52391AF1B00F2113B /* SceneDelegate.swift in Sources */,
-				F65A08B62391AF1B00F2113B /* Helpers.swift in Sources */,
-				F65A08B72391AF1B00F2113B /* GridElementView.swift in Sources */,
-				F65A08B82391AF1B00F2113B /* GridView.swift in Sources */,
-				F65A08B92391AF1B00F2113B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,7 +542,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = "-D TOGGLE_CONDITIONAL";
+				OTHER_SWIFT_FLAGS = "-D REGULAR_VIEW_UPDATE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftui.performance.SwiftUIPerformance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -624,7 +563,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = "-D TOGGLE_CONDITIONAL";
+				OTHER_SWIFT_FLAGS = "-D REGULAR_VIEW_UPDATE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftui.performance.SwiftUIPerformance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -645,7 +584,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = "-D TOGGLE_ANYVIEW";
+				OTHER_SWIFT_FLAGS = "-D TYPE_ERASED_VIEW_UPDATE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftui.performance.SwiftUIPerformance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -666,7 +605,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = "-D TOGGLE_ANYVIEW";
+				OTHER_SWIFT_FLAGS = "-D TYPE_ERASED_VIEW_UPDATE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftui.performance.SwiftUIPerformance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -687,7 +626,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = "-D COMPARE_TYPED";
+				OTHER_SWIFT_FLAGS = "-D EQUATABLE_VIEW_UPDATE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftui.performance.SwiftUIPerformance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -708,49 +647,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_SWIFT_FLAGS = "-D COMPARE_TYPED";
-				PRODUCT_BUNDLE_IDENTIFIER = com.swiftui.performance.SwiftUIPerformance;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		F65A08C02391AF1B00F2113B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIPerformance/Assets\"";
-				DEVELOPMENT_TEAM = J6H9A24BCA;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUIPerformance/Assets/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				OTHER_SWIFT_FLAGS = "-D COMPARE_TYPE_ERASED";
-				PRODUCT_BUNDLE_IDENTIFIER = com.swiftui.performance.SwiftUIPerformance;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		F65A08C12391AF1B00F2113B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIPerformance/Assets\"";
-				DEVELOPMENT_TEAM = J6H9A24BCA;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUIPerformance/Assets/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				OTHER_SWIFT_FLAGS = "-D COMPARE_TYPE_ERASED";
+				OTHER_SWIFT_FLAGS = "-D EQUATABLE_VIEW_UPDATE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftui.performance.SwiftUIPerformance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -779,7 +676,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F65A08862391ADD900F2113B /* Build configuration list for PBXNativeTarget "Toggle with ConditionalView" */ = {
+		F65A08862391ADD900F2113B /* Build configuration list for PBXNativeTarget "Regular View Update" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F65A08872391ADD900F2113B /* Debug */,
@@ -788,7 +685,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F65A08992391AED600F2113B /* Build configuration list for PBXNativeTarget "Toggle with AnyView" */ = {
+		F65A08992391AED600F2113B /* Build configuration list for PBXNativeTarget "Type-erased View Update" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F65A089A2391AED600F2113B /* Debug */,
@@ -797,20 +694,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F65A08AC2391AEF600F2113B /* Build configuration list for PBXNativeTarget "Compare Typed" */ = {
+		F65A08AC2391AEF600F2113B /* Build configuration list for PBXNativeTarget "Equatable View Update" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F65A08AD2391AEF600F2113B /* Debug */,
 				F65A08AE2391AEF600F2113B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F65A08BF2391AF1B00F2113B /* Build configuration list for PBXNativeTarget "Compare Type Erased" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F65A08C02391AF1B00F2113B /* Debug */,
-				F65A08C12391AF1B00F2113B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

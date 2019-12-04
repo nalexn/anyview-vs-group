@@ -42,22 +42,6 @@ struct ImageElementView: GridElementView {
     }
 }
 
-func == (lhs: TextElementView, rhs: TextElementView) -> Bool {
-    return true
-}
-
-func == (lhs: ImageElementView, rhs: ImageElementView) -> Bool {
-    return true
-}
-
-func == (lhs: ToggledElementView, rhs: ToggledElementView) -> Bool {
-    return true
-}
-
-func == (lhs: TypeErasedToggledElementView, rhs: TypeErasedToggledElementView) -> Bool {
-    return true
-}
-
 struct ToggledElementView: GridElementView {
     
     let indexPath: IndexPath
@@ -96,4 +80,20 @@ struct TypeErasedToggledElementView: GridElementView {
             return AnyView(TextElementView(indexPath: indexPath, update: update))
         }
     }
+}
+
+func == (lhs: TextElementView, rhs: TextElementView) -> Bool {
+    return true
+}
+
+func == (lhs: ImageElementView, rhs: ImageElementView) -> Bool {
+    return true
+}
+
+func == (lhs: ToggledElementView, rhs: ToggledElementView) -> Bool {
+    return true
+}
+
+func == (lhs: TypeErasedToggledElementView, rhs: TypeErasedToggledElementView) -> Bool {
+    return false
 }

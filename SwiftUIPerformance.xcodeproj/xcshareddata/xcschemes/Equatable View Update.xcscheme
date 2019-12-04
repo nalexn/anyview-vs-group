@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F65A089E2391AEF600F2113B"
-               BuildableName = "Compare Typed.app"
-               BlueprintName = "Compare Typed"
+               BuildableName = "Equatable View Update.app"
+               BlueprintName = "Equatable View Update"
                ReferencedContainer = "container:SwiftUIPerformance.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F65A089E2391AEF600F2113B"
-            BuildableName = "Compare Typed.app"
-            BlueprintName = "Compare Typed"
+            BuildableName = "Equatable View Update.app"
+            BlueprintName = "Equatable View Update"
             ReferencedContainer = "container:SwiftUIPerformance.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F65A089E2391AEF600F2113B"
-            BuildableName = "Compare Typed.app"
-            BlueprintName = "Compare Typed"
+            BuildableName = "Equatable View Update.app"
+            BlueprintName = "Equatable View Update"
             ReferencedContainer = "container:SwiftUIPerformance.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
