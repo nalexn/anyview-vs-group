@@ -93,5 +93,5 @@ func == (lhs: ToggledElementView, rhs: ToggledElementView) -> Bool {
 }
 
 func == (lhs: TypeErasedToggledElementView, rhs: TypeErasedToggledElementView) -> Bool {
-    fatalError("Must not be called")
+    return false
 }
